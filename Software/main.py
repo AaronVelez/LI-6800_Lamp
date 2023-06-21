@@ -70,6 +70,7 @@ Max_Zener_V = 3.3  # Maximum voltage allowed by zener diode
 Nom_R = 10      # Nominal thermistor resistance in kohms at 25°C
 Div_R = 3.32    # Value of the voltage divider resistor in kohms
 # Manufacturer (Amphenol) constants for calculate termistor resistance of material type F
+# https://www.amphenol-sensors.com/hubfs/Documents/AAS-913-318B-Temp-Resistance-Curves-091614-web.pdf
 a = [3.3538646E-03, 2.56544090E-04, 1.9243889E-06, 1.0969244E-07]
 b = [3.3540154E-03, 2.5627725E-04, 2.0829210E-06, 7.3002306E-08]
 c = [3.3539264E-03, 2.5609446E-04, 1.9621987E-06, 4.6045930E-08]
