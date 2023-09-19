@@ -321,7 +321,7 @@
             {
                 "name": "Lamp_Qamb_in_Factor",
                 "kind": 0,
-                "description": "Lamp v1 Missmatch factor between Qamb_in and Lamp_PAR_Ctrl",
+                "description": "Lamp v1 Mismatch factor between Qamb_in and Lamp_PAR_Ctrl",
                 "units": "",
                 "format": [
                     "s",
