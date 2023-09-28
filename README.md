@@ -11,6 +11,11 @@ This repository contains the hardware CAD files, electronic schematics, software
 
 ## Hardware
 
+This section has the following contents:
+
+- AutoCAD Inventor files
+- Ready-to-Print STL files
+
 
 ## Software
 
