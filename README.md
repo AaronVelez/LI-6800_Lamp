@@ -37,4 +37,4 @@ The content of this section is released under a [GNU Lesser General Public Licen
 
 &nbsp;
 ## Data
-
+This section contains the gas exchange data associated with the paper in a format that follows the recommendations of [Ely et al. (2021)]( https://doi.org/10.1016/j.ecoinf.2021.101232). The file [LI-6800_Lamp_Data_Description.pdf](Data/LI-6800_Lamp_Data_Description.pdf) holds a detailed description of all shared data files.
