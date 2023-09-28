@@ -8,7 +8,7 @@ This repository contains the hardware CAD files, electronic schematics, software
 ## Releases
 |  Release     |  Description                                 |  Release date |
 |  ----------- | -------------------------------------------- | ------------- |
-|  v1.0.0-beta.0 |  State of the repository at paper submission |     |
+|  v1.0.0-beta.0 |  State of the repository at paper submission |  28 / Sep / 2023   |
 
 &nbsp;
 ## Hardware
