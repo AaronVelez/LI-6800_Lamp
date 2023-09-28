@@ -4,12 +4,12 @@ additionalDataIncluded,no
 instrumentOutputStatus,2
 plantType,C3
 leafType,graminoid
-requiredProtocols,Parameters estimated according to Rivera-Méndez and Romero (2017)
+requiredProtocols,Parameters estimated according to Rivera-MÃ©ndez and Romero (2017)
 mesophyllConductanceType,assumed infinite
 leafStatus,attached leaf
 leafAreaBasis,one-sided area
 leafAreaMethod,single leaf fills chamber of known area
-kineticConstants,Refer to Rivera-Méndez and Romero (2017)
+kineticConstants,Refer to Rivera-MÃ©ndez and Romero (2017)
 growthEnvironment,glasshouse
 experimentalTreatment,none 
 plantAge,multiple
