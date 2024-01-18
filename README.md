@@ -33,3 +33,11 @@ The content of this section is released under a [GNU Lesser General Public Licen
 &nbsp;
 ## Data
 This section contains the gas exchange data associated with the paper in a format that follows the recommendations of [Ely *et al.* (2021)]( https://doi.org/10.1016/j.ecoinf.2021.101232). The file [LI-6800_Lamp_Data_Description.pdf](Data/LI-6800_Lamp_Data_Description.pdf) holds a detailed description of all shared data files.
+
+&nbsp;
+## Troubleshooting
+|  Problem                                                                  |  Possible reason                                 |  Solution                                                                               |
+|  ------------------------------------------------------------------------ | ------------------------------------------------ | --------------------------------------------------------------------------------------- |
+|  Fan and COB-LED do not turn ON |  External power supply is not connected            | Make sure the external, 24V power supply is connected to the back of the lamp housing. |
+|  At the LI-6800 console, Lamp_T shows values unexpectedly high (e.g. >100 °C), and Lamp_T_TH-r shows values close to 0 kohms |  The microcontroller is not exciting the thermistor with the required 3.3V |  At the LI-6800 console, navigate to the Console User I/O and turn ON the 5V power supply (Power5) |
+|  At the LI-6800 console, the Q<sub>amb_in</sub> PPFD value is higher than the value measured with an external quantum sensor  | The Photodiode multiplier needs calibration  | Calibrate the photodiode multiplier following instructions in Appendix 2 |
