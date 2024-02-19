@@ -58,7 +58,7 @@ GROUP("True","Settings",
 				ASSIGN("VPD_set",
 					exp="1.2"),
 				# Assign a variable to an expression: ASSIGN('varname', exp="expression" [,dlg=Nothing()])
-				ASSIGN("CO2r_set",
+				ASSIGN("CO2s_set",
 					exp="400"),
 				# Assign a variable to an expression: ASSIGN('varname', exp="expression" [,dlg=Nothing()])
 				ASSIGN("Fan_rpm_set",
@@ -115,7 +115,7 @@ GROUP("True","Set def. environment",
 		# Set a control: SETCONTROL('target', 'value', 'eval' [,opt_target=''])
 		SETCONTROL("VPD_leaf","VPD_set","float"),
 		# Set a control: SETCONTROL('target', 'value', 'eval' [,opt_target=''])
-		SETCONTROL("CO2_r","CO2r_set","float"),
+		SETCONTROL("CO2_s","CO2s_set","float"),
 		# Set a control: SETCONTROL('target', 'value', 'eval' [,opt_target=''])
 		SETCONTROL("Fan_rpm","Fan_rpm_set","float"),
 		# Set a control: SETCONTROL('target', 'value', 'eval' [,opt_target=''])
@@ -162,7 +162,7 @@ GROUP("True","A-PAR_Curve",
 				# Set a control: SETCONTROL('target', 'value', 'eval' [,opt_target=''])
 				SETCONTROL("User:Lamp_PAR_Ctrl","PAR_levels[i]","string"),
 				# Wait for statility: WAIT(min="float_seconds", max="float_seconds" [,early=False])]
-				WAIT(min="PAR_wait[i]*60",max="PAR_wait[i]*1.5*60",early="False"),
+				WAIT(min="PAR_wait[i]*60",max="PAR_wait[i]*2*60",early="False"),
 				# Log a data record: LOG([avg='Default'] [,match='Default'] [,matchH2O='Default'] [,flr='Default'] [flash='Default'])
 				LOG(),
 			)
@@ -177,7 +177,7 @@ GROUP("True","Set def. environment",
 		# Set a control: SETCONTROL('target', 'value', 'eval' [,opt_target=''])
 		SETCONTROL("VPD_leaf","VPD_set","float"),
 		# Set a control: SETCONTROL('target', 'value', 'eval' [,opt_target=''])
-		SETCONTROL("CO2_r","CO2r_set","float"),
+		SETCONTROL("CO2_s","CO2s_set","float"),
 		# Set a control: SETCONTROL('target', 'value', 'eval' [,opt_target=''])
 		SETCONTROL("Fan_rpm","Fan_rpm_set","float"),
 		# Set a control: SETCONTROL('target', 'value', 'eval' [,opt_target=''])
