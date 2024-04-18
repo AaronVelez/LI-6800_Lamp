@@ -364,7 +364,7 @@
         "licor/li6850/scripts/dacs/constants": {
             "dac2": 1.1658,
             "dac4": 0.0,
-            "dac1": 7.53154e-16,
+            "dac1": 0.0,
             "dac3": 0.0
         }
     }
