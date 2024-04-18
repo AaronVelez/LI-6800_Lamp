@@ -1,34 +1,149 @@
 {
-    "Stability": {
-        "H2O_s.Meas.licor/li6850/output/DATA": {
-            "Period": 30,
-            "StdLim": 1,
-            "SlpOn": 1,
-            "label": "H2O_s",
-            "units": "mmol mol\u207b\u00b9",
-            "StdOn": 0,
-            "SlpLim": 0.2
+    "Grids": {
+        "grid6": {
+            "gridvars": [
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::"
+            ],
+            "gridsize": "4col3row"
         },
-        "CO2_s.Meas.licor/li6850/output/DATA": {
-            "Period": 30,
-            "StdLim": 1,
-            "SlpOn": 1,
-            "label": "CO2_s",
-            "units": "\u00b5mol mol\u207b\u00b9",
-            "StdOn": 0,
-            "SlpLim": 0.3
+        "grid2": {
+            "gridvars": [
+                "licor/li6850/computed/DATACOMP::A",
+                "::",
+                "licor/li6850/output/DATA::CO2_d",
+                "::",
+                "licor/li6850/computed/DATACOMP::E",
+                "::",
+                "licor/li6850/output/DATA::H2O_d",
+                "licor/li6850/scripts/datacomp/constants::S",
+                "::",
+                "licor/li6850/output/DATA::Flow",
+                "licor/li6850/output/DATA::Flow_r",
+                "licor/li6850/output/DATA::Flow_s"
+            ],
+            "gridsize": "4col3row"
         },
-        "CO2_r.Meas.licor/li6850/output/DATA": {
-            "Period": 30,
-            "StdLim": 1,
-            "SlpOn": 1,
-            "label": "CO2_r",
-            "units": "\u00b5mol mol\u207b\u00b9",
-            "StdOn": 0,
-            "SlpLim": 0.3
+        "grid1": {
+            "gridvars": [
+                "licor/li6850/computed/DATACOMP::A",
+                "licor/li6850/output/DATA::CO2_r",
+                "licor/li6850/output/DATA::CO2_s",
+                "licor/li6850/computed/DATACOMP::Ci",
+                "licor/li6850/computed/DATACOMP::E",
+                "licor/li6850/output/DATA::H2O_r",
+                "licor/li6850/output/DATA::H2O_s",
+                "licor/li6850/computed/DATACOMP::gsw",
+                "licor/li6850/output/DATA::PPFD_out",
+                "licor/li6850/scripts/leafq/data::Qin",
+                "licor/li6850/output/DATA::Flow_s",
+                "licor/li6850/computed/DATACOMP::RHcham"
+            ],
+            "gridsize": "4col3row"
+        },
+        "grid4": {
+            "gridvars": [
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::"
+            ],
+            "gridsize": "4col3row"
+        },
+        "grid3": {
+            "gridvars": [
+                "licor/li6850/output/DATA::Tleaf",
+                "licor/li6850/output/DATA::Tleaf2",
+                "licor/li6850/computed/DATACOMP::TleafEB",
+                "licor/li6850/computed/DATACOMP::TleafCnd",
+                "licor/li6850/output/DATA::Tchamber",
+                "licor/li6850/output/DATA::Tirga_block",
+                "licor/li6850/output/DATA::Txchg",
+                "licor/li6850/computed/DATACOMP::VPDleaf",
+                "licor/li6850/scripts/leafq/data::Qin",
+                "licor/li6850/scripts/leafq/data::alpha",
+                "licor/li6850/scripts/leafq/data::Qabs",
+                "licor/li6850/output/DATA::PPFD_out"
+            ],
+            "gridsize": "4col3row"
+        },
+        "grid5": {
+            "gridvars": [
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::",
+                "::"
+            ],
+            "gridsize": "4col3row"
+        },
+        "grid7": {
+            "gridvars": [
+                "licor/li6850/output/DATA::Press",
+                "licor/li6850/output/DATA::Pchamber",
+                "::",
+                "::",
+                "licor/li6850/scripts/match/state::co2_elapsed",
+                "licor/li6850/scripts/match/state::h2o_elapsed",
+                "::",
+                "::",
+                "licor/li6850/scripts/match/state::MatchCO2",
+                "licor/li6850/scripts/match/state::MatchH2O",
+                "::",
+                "::"
+            ],
+            "gridsize": "4col3row"
+        },
+        "grid8": {
+            "gridvars": [
+                "licor/li6850/output/DATASTAT::Desiccant_percent",
+                "licor/li6850/output/DATASTAT::Humidifier_percent",
+                "licor/li6850/output/DATASTAT::CO2_percent",
+                "::",
+                "licor/li6850/scripts/integratedflow/data::AccH2O_des",
+                "licor/li6850/scripts/integratedflow/data::AccH2O_hum",
+                "licor/li6850/scripts/integratedflow/data::AccCO2_soda",
+                "::",
+                "licor/li6850/output/DATASTAT::SS_b",
+                "licor/li6850/output/DATASTAT::SS_a",
+                "licor/li6850/scripts/integratedflow/data::CO2_hrs",
+                "::"
+            ],
+            "gridsize": "4col3row"
         }
     },
+    "ver": 10,
     "UsrDef": {
+        "licor/li6850/scripts/userdefcons": {
+            "Lamp_T_Ctrl": "30",
+            "Lamp_Qamb_in_Factor": "1",
+            "Lamp_PAR_Ctrl": "0"
+        },
         "licor/li6850/scripts/userdefvars/state": [
             {
                 "name": "Lamp_PAR_Ctrl",
@@ -72,8 +187,8 @@
                 "a1": 15,
                 "a2": 0.0825,
                 "v1": {
-                    "topic": "licor/li6850/scripts/userdefcons",
                     "group": "UserDefCon",
+                    "topic": "licor/li6850/scripts/userdefcons",
                     "label": "Lamp_T_Ctrl",
                     "name": "Lamp_T_Ctrl"
                 }
@@ -94,8 +209,8 @@
                 "a3": 45440000,
                 "a4": 2272,
                 "v1": {
-                    "topic": "licor/li6850/scripts/userdefvars",
                     "group": "UserDefVar",
+                    "topic": "licor/li6850/scripts/userdefvars",
                     "label": "Lamp_T_trinket_V_Ctrl",
                     "name": "Lamp_T_trinket_V_Ctrl"
                 }
@@ -114,8 +229,8 @@
                 "a1": 3.3,
                 "a2": 3.32,
                 "v1": {
-                    "topic": "licor/li6850/output/DATA",
                     "group": "Auxiliary",
+                    "topic": "licor/li6850/output/DATA",
                     "label": "ADC_CH1",
                     "name": "ADC_CH1"
                 }
@@ -141,8 +256,8 @@
                 "a8": 10,
                 "a9": 10,
                 "v1": {
-                    "topic": "licor/li6850/scripts/userdefvars",
                     "group": "UserDefVar",
+                    "topic": "licor/li6850/scripts/userdefvars",
                     "label": "Lamp_T_TH-r",
                     "name": "Lamp_T_TH-r"
                 }
@@ -158,25 +273,25 @@
                     4
                 ],
                 "equation": "-((-math.sqrt(pow(a1+a3*v2+a4*v3,2)+4*a2*v1)+a1+a3*v2+a4*v3)/(2*a2))",
-                "a1": 1198.290537,
-                "a2": -31.758607,
-                "a3": -1.948934,
-                "a4": -2.515517,
+                "a1": 674.391795,
+                "a2": -16.509904,
+                "a3": -0.725546,
+                "a4": -1.46382,
                 "v1": {
-                    "topic": "licor/li6850/scripts/userdefcons",
                     "group": "UserDefCon",
+                    "topic": "licor/li6850/scripts/userdefcons",
                     "label": "Lamp_PAR_Ctrl",
                     "name": "Lamp_PAR_Ctrl"
                 },
                 "v2": {
-                    "topic": "licor/li6850/scripts/userdefvars",
                     "group": "UserDefVar",
+                    "topic": "licor/li6850/scripts/userdefvars",
                     "label": "Lamp_T",
                     "name": "Lamp_T"
                 },
                 "v3": {
-                    "topic": "licor/li6850/scripts/datacomp/constants",
                     "group": "Const",
+                    "topic": "licor/li6850/scripts/datacomp/constants",
                     "label": "S",
                     "name": "S"
                 }
@@ -195,177 +310,62 @@
                 "logreset": false,
                 "header": false
             }
-        ],
-        "licor/li6850/scripts/userdefcons": {
-            "Lamp_Qamb_in_Factor": "1",
-            "Lamp_PAR_Ctrl": "0",
-            "Lamp_T_Ctrl": "30"
+        ]
+    },
+    "Stability": {
+        "H2O_s.Meas.licor/li6850/output/DATA": {
+            "Period": 30,
+            "units": "mmol mol\u207b\u00b9",
+            "SlpOn": 1,
+            "StdLim": 1,
+            "SlpLim": 0.2,
+            "label": "H2O_s",
+            "StdOn": 0
+        },
+        "CO2_s.Meas.licor/li6850/output/DATA": {
+            "Period": 30,
+            "units": "\u00b5mol mol\u207b\u00b9",
+            "SlpOn": 1,
+            "StdLim": 1,
+            "SlpLim": 0.3,
+            "label": "CO2_s",
+            "StdOn": 0
+        },
+        "CO2_r.Meas.licor/li6850/output/DATA": {
+            "Period": 30,
+            "units": "\u00b5mol mol\u207b\u00b9",
+            "SlpOn": 1,
+            "StdLim": 1,
+            "SlpLim": 0.3,
+            "label": "CO2_r",
+            "StdOn": 0
         }
     },
-    "Grids": {
-        "grid3": {
-            "gridsize": "4col3row",
-            "gridvars": [
-                "licor/li6850/output/DATA::Tleaf",
-                "licor/li6850/output/DATA::Tleaf2",
-                "licor/li6850/computed/DATACOMP::TleafEB",
-                "licor/li6850/computed/DATACOMP::TleafCnd",
-                "licor/li6850/output/DATA::Tchamber",
-                "licor/li6850/output/DATA::Tirga_block",
-                "licor/li6850/output/DATA::Txchg",
-                "licor/li6850/computed/DATACOMP::VPDleaf",
-                "licor/li6850/scripts/leafq/data::Qin",
-                "licor/li6850/scripts/leafq/data::alpha",
-                "licor/li6850/scripts/leafq/data::Qabs",
-                "licor/li6850/output/DATA::PPFD_out"
-            ]
-        },
-        "grid1": {
-            "gridsize": "4col3row",
-            "gridvars": [
-                "licor/li6850/computed/DATACOMP::A",
-                "licor/li6850/output/DATA::CO2_r",
-                "licor/li6850/output/DATA::CO2_s",
-                "licor/li6850/computed/DATACOMP::Ci",
-                "licor/li6850/computed/DATACOMP::E",
-                "licor/li6850/output/DATA::H2O_r",
-                "licor/li6850/output/DATA::H2O_s",
-                "licor/li6850/computed/DATACOMP::gsw",
-                "licor/li6850/scripts/datacomp/constants::Dyn",
-                "licor/li6850/scripts/leafq/data::Qin",
-                "licor/li6850/output/DATA::Flow_s",
-                "licor/li6850/computed/DATACOMP::RHcham"
-            ]
-        },
-        "grid4": {
-            "gridsize": "4col3row",
-            "gridvars": [
-                "licor/li6850/scripts/userdefcons::Lamp_PAR_Ctrl",
-                "licor/li6850/scripts/leafq/data::Qin",
-                "licor/li6850/scripts/userdefcons::Lamp_T_Ctrl",
-                "licor/li6850/scripts/userdefvars::Lamp_T",
-                "licor/li6850/scripts/userdefvars::Lamp_PAR_DAC1_Ctrl",
-                "licor/li6850/scripts/userdefcons::Lamp_Qamb_in_Factor",
-                "licor/li6850/scripts/userdefvars::Lamp_T_DAC2_V_Ctrl",
-                "licor/li6850/scripts/userdefvars::Lamp_T_TH-r",
-                "::",
-                "::",
-                "licor/li6850/scripts/userdefvars::Lamp_T_trinket_V_Ctrl",
-                "::"
-            ]
-        },
-        "grid8": {
-            "gridsize": "4col3row",
-            "gridvars": [
-                "licor/li6850/output/DATASTAT::Desiccant_percent",
-                "licor/li6850/output/DATASTAT::Humidifier_percent",
-                "licor/li6850/output/DATASTAT::CO2_percent",
-                "::",
-                "licor/li6850/scripts/integratedflow/data::AccH2O_des",
-                "licor/li6850/scripts/integratedflow/data::AccH2O_hum",
-                "licor/li6850/scripts/integratedflow/data::AccCO2_soda",
-                "::",
-                "licor/li6850/output/DATASTAT::SS_b",
-                "licor/li6850/output/DATASTAT::SS_a",
-                "licor/li6850/scripts/integratedflow/data::CO2_hrs",
-                "::"
-            ]
-        },
-        "grid5": {
-            "gridsize": "4col3row",
-            "gridvars": [
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::"
-            ]
-        },
-        "grid7": {
-            "gridsize": "4col3row",
-            "gridvars": [
-                "licor/li6850/output/DATA::Press",
-                "licor/li6850/output/DATA::Pchamber",
-                "::",
-                "::",
-                "licor/li6850/scripts/match/state::co2_elapsed",
-                "licor/li6850/scripts/match/state::h2o_elapsed",
-                "::",
-                "::",
-                "licor/li6850/scripts/match/state::MatchCO2",
-                "licor/li6850/scripts/match/state::MatchH2O",
-                "::",
-                "::"
-            ]
-        },
-        "grid2": {
-            "gridsize": "4col3row",
-            "gridvars": [
-                "licor/li6850/scripts/chamberblc/constants::Aperture",
-                "licor/li6850/computed/DATACOMP::Asty",
-                "licor/li6850/output/DATA::CO2_d",
-                "::",
-                "licor/li6850/scripts/dat::Edyn",
-                "licor/li6850/computed/DATACOMP::Esty",
-                "licor/li6850/output/DATA::H2O_d",
-                "licor/li6850/scripts/datacomp/constants::S",
-                "licor/li6850/scripts/datacomp/constants::Dyn",
-                "licor/li6850/output/DATA::Flow",
-                "licor/li6850/output/DATA::Flow_r",
-                "licor/li6850/output/DATA::Flow_s"
-            ]
-        },
-        "grid6": {
-            "gridsize": "4col3row",
-            "gridvars": [
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::",
-                "::"
-            ]
-        }
-    },
-    "ver": 10,
     "Aux": {
-        "licor/li6850/scripts/dacs/constants": {
-            "dac1": 0.0,
-            "dac3": 0.0,
-            "dac4": 0.0,
-            "dac2": 1.1658
-        },
-        "licor/li6850/scripts/gpio/constants": {
-            "io8": "high",
-            "io3": "high",
-            "excitation_5v": "off",
-            "io6": "high",
-            "io4": "high",
-            "io7": "high",
-            "GPIO_dir": "oooooooo",
-            "GPIO": "11111111",
-            "io1": "high",
-            "io2": "high",
-            "power_5v": "on",
-            "adc_ch1_pullup": "off",
-            "io5": "high",
-            "power_12v": "off"
-        },
         "licor/li6850/scripts/aux_power/constants": {
             "AuxPower": 0.0
+        },
+        "licor/li6850/scripts/gpio/constants": {
+            "adc_ch1_pullup": "off",
+            "GPIO": "11111111",
+            "excitation_5v": "off",
+            "io6": "high",
+            "io2": "high",
+            "GPIO_dir": "oooooooo",
+            "io4": "high",
+            "io1": "high",
+            "io3": "high",
+            "io8": "high",
+            "power_12v": "off",
+            "io5": "high",
+            "io7": "high",
+            "power_5v": "on"
+        },
+        "licor/li6850/scripts/dacs/constants": {
+            "dac2": 1.1658,
+            "dac4": 0.0,
+            "dac1": 7.53154e-16,
+            "dac3": 0.0
         }
     }
 }
