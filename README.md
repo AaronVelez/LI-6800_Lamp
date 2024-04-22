@@ -24,16 +24,23 @@ The content of this section is released under a [CERN Open Hardware Licence Vers
 ## Software
 The content of this section is released under a [GNU Lesser General Public License Version 3](Software/LISENSE.LESSER). It has the following contents:
 
-- A-PPFD_Curve.py file. An LI-6800 background program (a script in python) that performs an A-PPFD curve automatically.
-- Curve_Fit_Zener_Diode.py file. A python script needed in the Lamp temperature control calibration.
-- LI-6800 Lamp Config File. A custom LI-6800 configuration file.
-- Microcontroller_Main.py file. A python script run by the Lamp internal microcontroller board.
-- PAR_Ctrl.py and PAR_Ctrl_wFB.py files. Two LI-6800 background program (a script in python) that control the light intensity in response to the desired PPFD entered by a user.
-- Zenner Diode Calibration_Data Template.xlsx file. A Microsoft Excel file that serves as a data template for the Curve_Fit_Zener_Diode.py file
+- Lamp folder. Software directly related with the Lamp function
+  - A-PPFD_Curve.py file. An LI-6800 background program (a script in python) that performs an A-PPFD curve automatically.
+  - LI-6800 Lamp Config File. A custom LI-6800 configuration file.
+  - Microcontroller_Main.py file. A python script run by the Lamp internal microcontroller board.
+  - PAR_Ctrl.py and PAR_Ctrl_wFB.py files. Two LI-6800 background program (a script in python) that control the light intensity in response to the desired PPFD entered by a user.
+
+- Tools folder. Software tools used during lamp calibration and/or characterization
+  - Curve_Fit_Zener_Diode.py file. A python script needed in the Lamp temperature control calibration.
+  - Zenner Diode Calibration_Data Template.xlsx file. A Microsoft Excel file that serves as a data template for the Curve_Fit_Zener_Diode.py file
+  - Homogenity_Scan_LabVIEW_VIs folder. A collection of LabVIEW VIs used to control a CNC machine in order to sacan the leaf area illuminated by the lamo with the objective of measuring the light homogenity
+  - Homogenity_Scan_Python. Scripts used to process the RAW data measured with the LabVEW VIs
 
 &nbsp;
 ## Data
-This section contains the gas exchange data associated with the paper in a format that follows the recommendations of [Ely *et al.* (2021)]( https://doi.org/10.1016/j.ecoinf.2021.101232). The file [LI-6800_Lamp_Data_Description.pdf](Data/LI-6800_Lamp_Data_Description.pdf) holds a detailed description of all shared data files.
+
+- A-PPDF_Curves folder. This section contains the gas exchange data associated with the paper in a format that follows the recommendations of [Ely *et al.* (2021)]( https://doi.org/10.1016/j.ecoinf.2021.101232). The file [LI-6800_Lamp_Data_Description.pdf](Data/LI-6800_Lamp_Data_Description.pdf) holds a detailed description of all shared data files.
+- Homogenity_Scans folder. This section contains the RAW measurements of the homogenity scans performed with the CNC machine.
 
 &nbsp;
 ## Troubleshooting
